@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Full Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{firstname()}}</td>
+        <td>{{lastname()}}</td>
+        <td>{{fullname()}}</td>
+      </tr>     
+    </tbody>
+  </table>
+
+  <div>
+    Change First Name :
+    <input type="text" class="form-control" [value]="firstname()" #fname>
+    <button (click)="changefirstname(fname.value)">Change firstname</button>
+  </div>
+
+  <div>
+    Change Last Name :
+    <input type="text" class="form-control" [value]="lastname()" #lname>
+    <button (click)="changelastname(lname.value)">Change lastname</button>
+  </div>

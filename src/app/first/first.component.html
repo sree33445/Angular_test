@@ -1,0 +1,23 @@
+<h1>First Component</h1>
+
+@if(showme){
+<h2>Show me</h2>
+} @else{
+<h2>Hide me</h2>
+}
+
+@for(color of colors; track color){
+    <li>{{color}}</li>
+}
+
+@switch(fruit){
+    @case("Banana"){
+        <h2>Banana</h2>
+    }
+    @case("Apple"){
+        <h2>Apple</h2>
+    }
+    @default{
+        <h2>Default</h2>
+    }
+}
